@@ -78,4 +78,6 @@ nav {
     display: block;
     flex: 1 1 50%;
     border: 1px solid blue;
+    align-items: center;/*check on space between header, section 1, and section 2*/
+    margin: 50px 0;/*check on space between header, section 1, and section 2*/
 }
