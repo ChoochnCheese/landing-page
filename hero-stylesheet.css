@@ -1,22 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-
-
+/*setup*/
 * {
     box-sizing: border-box;
 }
 
 header, footer, main {
     border: 3px solid red;
-    min-height: 100px;
 }
 section {
     border: 4px solid lime;
-    min-height: 200px;
+}
+
+.hero-image {
+    display: block;
+}
+
+img {
+    /*makes it so it fits its container*/
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*structure*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*sets body to full view height*/
+}
+
+main {
+    flex: 1; /*stretches the bodys main child and puts footer at bottom*/
 }
 
 inner-column {
     display: block;
     border: 4px solid orange;
     padding: 10px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*COMPONENTS*/
+
+/*HEADER MODULE*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+}
+
+/*MODULES*/
+.hero-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 700px;
+    border: 1px solid blue;
+    gap: 20px;
+}
+
+.hero-text, .hero-image{
+    display: block;
+    flex: 1 1 50%;
+    border: 1px solid blue;
 }
