@@ -147,8 +147,14 @@ a{
     border: 1px solid blue;
 }
 .info-card {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
     width: 125px;
+}
+.info-card p {
+    margin-top: 4px;
+    font-size: 12px;
 }
 .info-image {
     border: 2px solid #3882f6;
@@ -156,6 +162,23 @@ a{
     border-radius: 10px;
     width: 125px;
     height: 125px;
+}
+.quote-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 150px;
+}
+.quote-box em {
+    font-size: 36px;
+    font-weight: 300;
+    color: #1f2937;;
+}
+.quote-box p {
+    align-self: flex-end;
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 #quote {
