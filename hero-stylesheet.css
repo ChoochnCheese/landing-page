@@ -61,10 +61,11 @@ inner-column {
     color: #e5e7eb;
 }
 
-.hero-text h1 {
+.hero-text h2 {
     font-size: 48px;
     font-weight: 900;
     color: #f9faf8;
+    margin: 0;
 }
 
 .logo{
@@ -72,14 +73,25 @@ inner-column {
     color: #f9faf8;
 }
 
+button{
+    background-color: #3882f6;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 20px;
+    color: #f9faf8;
+}
+
 
 
 /*HEADER MODULE*/
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+
 
 .links ul {
     display: flex;
@@ -95,6 +107,7 @@ a{
 }
 
 /*MODULES*/
+/*Hero Section*/
 .hero-box {
     display: flex;
     flex-direction: row;
@@ -109,10 +122,44 @@ a{
     display: block;
     flex: 1 1 50%;
     border: 1px solid blue;
+    /*check on space between header, section 1, and section 2*/
+    margin-bottom: 30px;
+    /*check on space between header, section 1, and section 2*/
+}
+
+/*Info Section*/
+.info-box h2 {
+    font-size: 36px;
+    color: #1f2937;
+}
+.info-box {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    /*check on space between header, section 1, and section 2*/
-    margin: 50px 0;
-    /*check on space between header, section 1, and section 2*/
+    border: 1px solid blue;
+    margin-bottom: 30px
+}
+.info-array {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px;
+    border: 1px solid blue;
+}
+.info-card {
+    display: block;
+    width: 125px;
+}
+.info-image {
+    border: 2px solid #3882f6;
+    display: block;
+    border-radius: 10px;
+    width: 125px;
+    height: 125px;
+}
+
+#quote {
+    background-color: #e5e7eb;
 }
 
 #hero, #masthead, #footer{
