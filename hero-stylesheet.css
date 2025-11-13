@@ -163,11 +163,18 @@ a{
     width: 125px;
     height: 125px;
 }
+.info-image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*Quote section*/
 .quote-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 40px 150px;
+    margin: 40px 18%;
 }
 .quote-box em {
     font-size: 36px;
@@ -181,9 +188,45 @@ a{
     font-size: 18px;
 }
 
+.action-box {
+    background-color: #3882f6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+} 
+
+p.action, p.action-description{
+    margin: 0;
+    color: #e5e7eb;
+}
+
+p.action{
+    font-weight: 700;
+}
+p.action-description{
+    font-size: 14px;
+}
+
+.sign-up-button {
+    background-color: #3882f6;
+    border: solid 2px white;
+    border-radius: 8px;
+    padding: 6px 20px;
+    color: #f9faf8;
+}
+
+h2.footer-text{
+    color: #f9faf8;
+    text-align: center;
+    font-size: 14px;
+}
 #quote {
     background-color: #e5e7eb;
 }
+
 
 #hero, #masthead, #footer{
     background-color: #1f2937;
